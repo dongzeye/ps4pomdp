@@ -1,0 +1,485 @@
+{
+    "global": {
+        "exp_name": "theta3_discounted",
+        "exp_dir": "./experiments/tiger",
+        "tmp_dir": "./experiments/tiger/tmp/theta3_discounted",
+        "result_dir": "./experiments/tiger/results/theta3_discounted",
+        "n_runs": 20,
+        "n_episodes": 500,
+        "env_config": {
+            "id": "pomdp_envs:Tiger-v0",
+            "discount": 0.99,
+            "horizon": 10,
+            "theta": 0.3,
+            "listen_cost": -1,
+            "treasure_reward": 10,
+            "tiger_penalty": -100
+        },
+        "planner_discount": 0.99,
+        "mcmc_config": {
+            "num_warmup": 5000,
+            "num_samples": 5000,
+            "num_chains": 5
+        }
+    },
+    "0": {
+        "run_id": 0,
+        "main_seed": 733593,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run0_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run0_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run0_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run0_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run0_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run0_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run0_optimal_policy_sarsop.log"
+        }
+    },
+    "1": {
+        "run_id": 1,
+        "main_seed": 346646,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run1_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run1_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run1_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run1_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run1_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run1_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run1_optimal_policy_sarsop.log"
+        }
+    },
+    "2": {
+        "run_id": 2,
+        "main_seed": 208913,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run2_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run2_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run2_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run2_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run2_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run2_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run2_optimal_policy_sarsop.log"
+        }
+    },
+    "3": {
+        "run_id": 3,
+        "main_seed": 856538,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run3_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run3_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run3_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run3_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run3_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run3_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run3_optimal_policy_sarsop.log"
+        }
+    },
+    "4": {
+        "run_id": 4,
+        "main_seed": 171006,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run4_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run4_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run4_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run4_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run4_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run4_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run4_optimal_policy_sarsop.log"
+        }
+    },
+    "5": {
+        "run_id": 5,
+        "main_seed": 355411,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run5_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run5_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run5_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run5_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run5_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run5_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run5_optimal_policy_sarsop.log"
+        }
+    },
+    "6": {
+        "run_id": 6,
+        "main_seed": 782573,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run6_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run6_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run6_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run6_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run6_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run6_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run6_optimal_policy_sarsop.log"
+        }
+    },
+    "7": {
+        "run_id": 7,
+        "main_seed": 298033,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run7_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run7_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run7_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run7_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run7_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run7_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run7_optimal_policy_sarsop.log"
+        }
+    },
+    "8": {
+        "run_id": 8,
+        "main_seed": 879749,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run8_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run8_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run8_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run8_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run8_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run8_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run8_optimal_policy_sarsop.log"
+        }
+    },
+    "9": {
+        "run_id": 9,
+        "main_seed": 150585,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run9_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run9_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run9_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run9_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run9_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run9_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run9_optimal_policy_sarsop.log"
+        }
+    },
+    "10": {
+        "run_id": 10,
+        "main_seed": 754832,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run10_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run10_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run10_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run10_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run10_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run10_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run10_optimal_policy_sarsop.log"
+        }
+    },
+    "11": {
+        "run_id": 11,
+        "main_seed": 284722,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run11_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run11_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run11_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run11_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run11_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run11_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run11_optimal_policy_sarsop.log"
+        }
+    },
+    "12": {
+        "run_id": 12,
+        "main_seed": 556954,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run12_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run12_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run12_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run12_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run12_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run12_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run12_optimal_policy_sarsop.log"
+        }
+    },
+    "13": {
+        "run_id": 13,
+        "main_seed": 525171,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run13_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run13_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run13_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run13_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run13_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run13_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run13_optimal_policy_sarsop.log"
+        }
+    },
+    "14": {
+        "run_id": 14,
+        "main_seed": 165664,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run14_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run14_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run14_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run14_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run14_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run14_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run14_optimal_policy_sarsop.log"
+        }
+    },
+    "15": {
+        "run_id": 15,
+        "main_seed": 813532,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run15_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run15_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run15_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run15_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run15_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run15_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run15_optimal_policy_sarsop.log"
+        }
+    },
+    "16": {
+        "run_id": 16,
+        "main_seed": 225525,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run16_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run16_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run16_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run16_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run16_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run16_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run16_optimal_policy_sarsop.log"
+        }
+    },
+    "17": {
+        "run_id": 17,
+        "main_seed": 377899,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run17_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run17_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run17_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run17_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run17_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run17_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run17_optimal_policy_sarsop.log"
+        }
+    },
+    "18": {
+        "run_id": 18,
+        "main_seed": 762383,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run18_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run18_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run18_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run18_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run18_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run18_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run18_optimal_policy_sarsop.log"
+        }
+    },
+    "19": {
+        "run_id": 19,
+        "main_seed": 1209,
+        "fig_path": "./experiments/tiger/results/theta3_discounted/run19_eval_plot.jpg",
+        "result_path": "./experiments/tiger/results/theta3_discounted/run19_results.pkl",
+        "pomdp_path": "./experiments/tiger/results/theta3_discounted/run19_tiger.pomdp",
+        "sarsop_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 60,
+            "memory": 1024,
+            "precision": 0.05,
+            "policy_path": "./experiments/tiger/tmp/theta3_discounted/run19_sarsop.policy",
+            "logfile": "./experiments/tiger/tmp/theta3_discounted/run19_sarsop.log"
+        },
+        "sarsop_optimal_policy_config": {
+            "pomdpsol_path": "./sarsop/src/pomdpsol",
+            "timeout": 120,
+            "memory": 2048,
+            "precision": 0.01,
+            "policy_path": "./experiments/tiger/results/theta3_discounted/run19_optimal_sarsop.policy",
+            "logfile": "./experiments/tiger/results/theta3_discounted/run19_optimal_policy_sarsop.log"
+        }
+    }
+}

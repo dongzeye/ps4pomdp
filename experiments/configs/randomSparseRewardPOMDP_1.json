@@ -1,0 +1,960 @@
+{
+    "global": {
+        "exp_name": "randomSparseRewardPOMDP_1",
+        "tmp_dir": "experiments/randomSparseRewardPOMDP_1/tmp",
+        "result_dir": "experiments/randomSparseRewardPOMDP_1/results",
+        "n_runs": 20,
+        "n_episodes": 500,
+        "env_config": {
+            "id": "pomdp_envs:SparseRewardPOMDP-v0",
+            "discount": 1.0,
+            "horizon": 20,
+            "n_states": 10,
+            "n_actions": 4,
+            "n_obs": 10,
+            "params": {
+                "transition_kernel": [
+                    [
+                        [
+                            0.014454462157521667,
+                            0.06245259439125932,
+                            0.247662046310445,
+                            0.0015597350645595541,
+                            0.05936323288570936,
+                            0.02860057949961526,
+                            0.35866471660101223,
+                            0.06456559235208373,
+                            0.042143896776987065,
+                            0.12053314396080671
+                        ],
+                        [
+                            0.0346605208931938,
+                            0.011972509193358741,
+                            0.1178275221219291,
+                            0.08202070517666063,
+                            0.11818900586968549,
+                            0.05650396429588425,
+                            0.35916071081579265,
+                            0.21175413118471137,
+                            0.0073730990001746564,
+                            0.0005378314486094251
+                        ],
+                        [
+                            0.005583637130651015,
+                            0.19695174230188847,
+                            0.07007411224253061,
+                            0.0026033035816986,
+                            0.1741878155439486,
+                            0.3665158071892165,
+                            0.0016586892107452607,
+                            0.04058302000365105,
+                            0.056053737936661296,
+                            0.08578813485900855
+                        ],
+                        [
+                            0.3560954782067041,
+                            0.026321125007795137,
+                            0.12565052512766317,
+                            0.1501805893210653,
+                            0.055839120563705394,
+                            0.06723982580709917,
+                            0.058390426130196245,
+                            0.14994160596740458,
+                            0.008267784966096023,
+                            0.002073518902270778
+                        ]
+                    ],
+                    [
+                        [
+                            0.10846147436516186,
+                            0.0013075998776620767,
+                            0.06099885449805039,
+                            0.14214529998490755,
+                            0.23095824363595666,
+                            0.05352581827511225,
+                            0.21765447927408646,
+                            0.0627064224558197,
+                            0.07761122287543026,
+                            0.04463058475781286
+                        ],
+                        [
+                            0.09532910036491271,
+                            0.11090964936352873,
+                            0.25448522714155986,
+                            0.011452616434111825,
+                            0.06988711077024638,
+                            0.16463595582849128,
+                            0.05962108027910746,
+                            0.03215016126249568,
+                            0.16720640787435995,
+                            0.03432269068118608
+                        ],
+                        [
+                            0.0785417383181082,
+                            0.21193927600158255,
+                            0.07709039856772812,
+                            0.06350603927918437,
+                            0.06803556691975206,
+                            0.16551522838498742,
+                            0.20733776736372836,
+                            0.0003123625095392176,
+                            0.06952889870391643,
+                            0.058192723951473235
+                        ],
+                        [
+                            0.06864858209086241,
+                            0.24415637251096198,
+                            0.050155502843659217,
+                            0.22365363598881072,
+                            0.09380038041131225,
+                            0.06163908205496705,
+                            0.007769491968705357,
+                            0.07652365278628276,
+                            0.15712501075823207,
+                            0.016528288586206252
+                        ]
+                    ],
+                    [
+                        [
+                            0.21083550473539986,
+                            0.05425468287919798,
+                            0.07181223035609348,
+                            0.0010558260424667386,
+                            0.04747066637477808,
+                            0.06103580636545102,
+                            0.2441536527083699,
+                            0.2609045099511526,
+                            0.04116676541763099,
+                            0.007310355169459296
+                        ],
+                        [
+                            0.10650795330823376,
+                            0.12514970917640092,
+                            0.010337684684260719,
+                            0.024163331706680252,
+                            0.10735032419468842,
+                            0.015360360381111928,
+                            0.1686983119749039,
+                            0.10444058405607332,
+                            0.2473050032440275,
+                            0.09068673727361921
+                        ],
+                        [
+                            0.07974673446767666,
+                            0.11572641740247937,
+                            0.022375114385333794,
+                            0.016677226336684597,
+                            0.14064924801580186,
+                            0.05406668946957736,
+                            0.049837372041918716,
+                            0.3031884978284539,
+                            0.08028887557440138,
+                            0.13744382447767234
+                        ],
+                        [
+                            0.06620755495484089,
+                            0.12392342989028762,
+                            0.09464463834734435,
+                            0.04393686834487141,
+                            0.0017028593922770766,
+                            0.0025078504304018394,
+                            0.32570332394000273,
+                            0.01323576100133893,
+                            0.05939298106045263,
+                            0.26874473263818244
+                        ]
+                    ],
+                    [
+                        [
+                            0.22329463273996503,
+                            0.06737878279997303,
+                            0.001974310699563664,
+                            0.12140527626757588,
+                            0.02531199256773243,
+                            0.3507251905706118,
+                            0.16599679689939986,
+                            0.03499747718784728,
+                            0.005832613120789268,
+                            0.0030829271465416933
+                        ],
+                        [
+                            0.09779129704937152,
+                            0.010308912679367342,
+                            0.13969854608514695,
+                            0.01493318667746764,
+                            0.02200393278847655,
+                            0.029917856872153852,
+                            0.15545685893501301,
+                            0.3145263076460948,
+                            0.006881982868023258,
+                            0.20848111839888503
+                        ],
+                        [
+                            0.189391812009672,
+                            0.16252165483890724,
+                            0.027332786809100795,
+                            0.04017214592956962,
+                            0.03856927594525848,
+                            0.20968958652380207,
+                            0.029657623689906067,
+                            0.09163176687040096,
+                            0.10474216531232892,
+                            0.10629118207105374
+                        ],
+                        [
+                            0.2334733944537757,
+                            0.18723580858886865,
+                            0.05328139390655276,
+                            0.10404285722227831,
+                            0.039168326386315094,
+                            0.06063150475038905,
+                            0.10951634153863457,
+                            0.08060697862434124,
+                            0.04240759264394861,
+                            0.08963580188489591
+                        ]
+                    ],
+                    [
+                        [
+                            0.14172044942425654,
+                            0.07868454858593606,
+                            0.04026026636592106,
+                            0.03746674293310809,
+                            0.059763482063137904,
+                            0.041926939313138685,
+                            0.1094347156265038,
+                            0.10382829891935821,
+                            0.27165423918351705,
+                            0.11526031758512256
+                        ],
+                        [
+                            0.11984851140732818,
+                            0.04873755615283642,
+                            0.09252665576540753,
+                            0.07987504256450893,
+                            0.0026736963274693396,
+                            0.13424219658630068,
+                            0.06254509342520105,
+                            0.08082370172185194,
+                            0.12435140784789928,
+                            0.25437613820119664
+                        ],
+                        [
+                            0.08713287675722697,
+                            0.031143445977857617,
+                            0.23571700094943585,
+                            0.014748216050671566,
+                            0.12094183549465448,
+                            0.010383189344586789,
+                            0.025760496235727227,
+                            0.15398940164111577,
+                            0.2652202794623807,
+                            0.054963258086342955
+                        ],
+                        [
+                            0.20402129059772153,
+                            0.046742502792815555,
+                            0.1502242925763063,
+                            0.022815204628807588,
+                            0.030905495305921425,
+                            0.04057752853940382,
+                            0.08200806065640076,
+                            0.033501677603196674,
+                            0.1805050136460349,
+                            0.20869893365339146
+                        ]
+                    ],
+                    [
+                        [
+                            0.07442743775194656,
+                            0.1826223821490701,
+                            0.15161364303150923,
+                            0.052177232899038806,
+                            0.15391636028682806,
+                            0.01351940832440366,
+                            0.19010432691843313,
+                            0.07197423536550802,
+                            0.026198992373897785,
+                            0.08344598089936475
+                        ],
+                        [
+                            0.13798182484771987,
+                            0.028956602482023565,
+                            0.015089996970510916,
+                            0.04923530092142475,
+                            0.16573430129757594,
+                            0.18484101824868035,
+                            0.04992845901472464,
+                            0.3088156520885386,
+                            0.03851439267109542,
+                            0.020902451457705994
+                        ],
+                        [
+                            0.10826631045780635,
+                            0.05007656681497609,
+                            0.12846881705673704,
+                            0.0004207363051332122,
+                            0.022792920891940276,
+                            0.03337502804382719,
+                            0.02550454579637283,
+                            0.1513775184416694,
+                            0.11493066732510222,
+                            0.3647868888664354
+                        ],
+                        [
+                            0.08838152802478663,
+                            0.22221514284566413,
+                            0.10483820793090542,
+                            0.1044532441002854,
+                            0.1466625372821172,
+                            0.0229443459391579,
+                            0.04500594445434718,
+                            0.03213108258260453,
+                            0.21518499702214075,
+                            0.0181829698179909
+                        ]
+                    ],
+                    [
+                        [
+                            0.06934659846262496,
+                            0.07449603872897177,
+                            0.11902101163810691,
+                            0.08887314252713865,
+                            0.017342849109269625,
+                            0.10144146671912682,
+                            0.2137877272294562,
+                            0.03162175496795631,
+                            0.06313615354879636,
+                            0.22093325706855235
+                        ],
+                        [
+                            0.019301992942135193,
+                            0.015373381288896213,
+                            0.05534226829405211,
+                            0.1387295730604987,
+                            0.012134087540696248,
+                            0.07999624908619608,
+                            0.3346530553493002,
+                            0.006836445657876523,
+                            0.09733190135718565,
+                            0.2403010454231631
+                        ],
+                        [
+                            0.09079869422836066,
+                            0.14662646480449357,
+                            0.07615132144076121,
+                            0.02253569925383891,
+                            0.17439616540016062,
+                            0.04064041755155432,
+                            0.05985934101894494,
+                            0.03938940794439689,
+                            0.07599439336021012,
+                            0.2736080949972788
+                        ],
+                        [
+                            0.14939562993763497,
+                            0.26301603960524894,
+                            0.24020282976541893,
+                            0.08358931458708517,
+                            0.07417995685236177,
+                            0.026798388074561138,
+                            0.09241752332534177,
+                            0.013823953769176516,
+                            0.04990617265581545,
+                            0.00667019142735533
+                        ]
+                    ],
+                    [
+                        [
+                            0.02363016941281709,
+                            0.20084755417870162,
+                            0.07814636472726215,
+                            0.10211971865665531,
+                            0.05367890352155673,
+                            0.026191285328218232,
+                            0.09674262060453614,
+                            0.13573669001881877,
+                            0.11048636727940558,
+                            0.17242032627202836
+                        ],
+                        [
+                            0.10324510982977388,
+                            0.022955493125469982,
+                            0.12821343613233663,
+                            0.21352634616313712,
+                            0.0549105683633787,
+                            0.21515227163307618,
+                            0.007323767035942639,
+                            0.08994129069339009,
+                            0.0718156226121596,
+                            0.09291609441133517
+                        ],
+                        [
+                            0.04625162642595336,
+                            0.17983114088693422,
+                            0.4766449628931607,
+                            0.00943115262898106,
+                            0.07091136427003629,
+                            0.026164346620390102,
+                            0.027271219978584626,
+                            0.058087921197883585,
+                            0.012210290104616843,
+                            0.09319597499345916
+                        ],
+                        [
+                            0.16149256247051386,
+                            0.18559364941331669,
+                            0.0016341258623099977,
+                            0.07101065914974437,
+                            0.002569904721357817,
+                            0.11202225233456672,
+                            0.059167346869988854,
+                            0.20558482502279607,
+                            0.07938411456185902,
+                            0.12154055959354662
+                        ]
+                    ],
+                    [
+                        [
+                            0.03168838013136012,
+                            0.022716248403874397,
+                            0.015010490924877338,
+                            0.003845131869470561,
+                            0.09399701091193279,
+                            0.016524038777522215,
+                            0.38413057354445007,
+                            0.002232729379360511,
+                            0.4183807116404694,
+                            0.011474684416682725
+                        ],
+                        [
+                            0.11084319808259638,
+                            0.06574219743835673,
+                            0.1474563805158938,
+                            0.10079636387389793,
+                            0.00806677399369567,
+                            0.17582347231105647,
+                            0.0880337062653909,
+                            0.005436032619390152,
+                            0.12249278663142413,
+                            0.1753090882682979
+                        ],
+                        [
+                            0.09184407032500365,
+                            0.018074359992224696,
+                            0.03152087547882807,
+                            0.028835541773437234,
+                            0.02168671546385734,
+                            0.2008721289969224,
+                            0.10441461304039679,
+                            0.09282591351998641,
+                            0.3775298341406658,
+                            0.03239594726867752
+                        ],
+                        [
+                            0.011786868138437287,
+                            0.01934994523325159,
+                            0.06405784613279654,
+                            0.13130346321537797,
+                            0.006061778121769817,
+                            0.0780549285916319,
+                            0.17759614318601075,
+                            0.32194022207383194,
+                            0.15838017810245514,
+                            0.03146862720443707
+                        ]
+                    ],
+                    [
+                        [
+                            0.04327703378025496,
+                            0.08562192801600017,
+                            0.05500921483792143,
+                            0.203871015906694,
+                            0.013482770513837035,
+                            0.20809963870240877,
+                            0.09959831809366976,
+                            0.05827926299993037,
+                            0.13685965409496387,
+                            0.09590116305431974
+                        ],
+                        [
+                            0.05415984619694256,
+                            0.11139926748057054,
+                            0.06641334769851684,
+                            0.06258317994875832,
+                            0.24244626467927413,
+                            0.059502452517781336,
+                            0.13686480464043524,
+                            0.018636937884035823,
+                            0.09785354505846884,
+                            0.15014035389521657
+                        ],
+                        [
+                            0.05786709984869359,
+                            0.03057939858254252,
+                            0.08700692629831402,
+                            0.05512748635666261,
+                            0.25050993864680465,
+                            0.10290450770457707,
+                            0.1523442617429362,
+                            0.07687843032694437,
+                            0.06376433562804426,
+                            0.12301761486448064
+                        ],
+                        [
+                            0.003779618897845005,
+                            0.08427862077162931,
+                            0.13630504506340968,
+                            0.03302774799037497,
+                            0.13448753080147283,
+                            0.05096906449622639,
+                            0.1849019488321346,
+                            0.10089637215464133,
+                            0.2595016960811149,
+                            0.011852354911150964
+                        ]
+                    ]
+                ],
+                "observation_params": [
+                    0.6,
+                    0.2,
+                    0.2
+                ],
+                "reward_params": [
+                    0.005,
+                    1
+                ],
+                "init_state_probs": [
+                    1.0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "infer_config": {
+            "prior_name": "generic_pomdp_prior_known_init_state",
+            "model_name": "generic_pomdp_model_known_init_state",
+            "mcmc_args": {
+                "num_warmup": 1000,
+                "num_samples": 2000,
+                "num_chains": 4
+            }
+        },
+        "known_params": [
+            "reward_params",
+            "init_state_probs",
+            "n_states",
+            "n_actions",
+            "n_obs"
+        ],
+        "eval_seed": 416275,
+        "eval_result_path": "experiments/randomSparseRewardPOMDP_1/results/eval_results.csv"
+    },
+    "0": {
+        "run_id": 0,
+        "np_seed": 957562,
+        "jr_seed": 100712,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run0_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run0.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run0_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run0.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run0_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run0_sarsop.log"
+            }
+        }
+    },
+    "1": {
+        "run_id": 1,
+        "np_seed": 247701,
+        "jr_seed": 755942,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run1_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run1.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run1_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run1.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run1_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run1_sarsop.log"
+            }
+        }
+    },
+    "2": {
+        "run_id": 2,
+        "np_seed": 680575,
+        "jr_seed": 524322,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run2_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run2.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run2_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run2.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run2_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run2_sarsop.log"
+            }
+        }
+    },
+    "3": {
+        "run_id": 3,
+        "np_seed": 191445,
+        "jr_seed": 668881,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run3_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run3.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run3_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run3.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run3_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run3_sarsop.log"
+            }
+        }
+    },
+    "4": {
+        "run_id": 4,
+        "np_seed": 711495,
+        "jr_seed": 626613,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run4_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run4.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run4_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run4.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run4_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run4_sarsop.log"
+            }
+        }
+    },
+    "5": {
+        "run_id": 5,
+        "np_seed": 737995,
+        "jr_seed": 312791,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run5_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run5.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run5_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run5.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run5_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run5_sarsop.log"
+            }
+        }
+    },
+    "6": {
+        "run_id": 6,
+        "np_seed": 497381,
+        "jr_seed": 534911,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run6_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run6.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run6_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run6.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run6_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run6_sarsop.log"
+            }
+        }
+    },
+    "7": {
+        "run_id": 7,
+        "np_seed": 675794,
+        "jr_seed": 740999,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run7_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run7.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run7_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run7.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run7_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run7_sarsop.log"
+            }
+        }
+    },
+    "8": {
+        "run_id": 8,
+        "np_seed": 846229,
+        "jr_seed": 707571,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run8_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run8.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run8_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run8.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run8_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run8_sarsop.log"
+            }
+        }
+    },
+    "9": {
+        "run_id": 9,
+        "np_seed": 495702,
+        "jr_seed": 780849,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run9_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run9.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run9_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run9.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run9_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run9_sarsop.log"
+            }
+        }
+    },
+    "10": {
+        "run_id": 10,
+        "np_seed": 129843,
+        "jr_seed": 37552,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run10_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run10.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run10_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run10.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run10_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run10_sarsop.log"
+            }
+        }
+    },
+    "11": {
+        "run_id": 11,
+        "np_seed": 221565,
+        "jr_seed": 392589,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run11_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run11.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run11_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run11.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run11_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run11_sarsop.log"
+            }
+        }
+    },
+    "12": {
+        "run_id": 12,
+        "np_seed": 630171,
+        "jr_seed": 726266,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run12_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run12.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run12_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run12.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run12_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run12_sarsop.log"
+            }
+        }
+    },
+    "13": {
+        "run_id": 13,
+        "np_seed": 107750,
+        "jr_seed": 962415,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run13_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run13.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run13_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run13.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run13_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run13_sarsop.log"
+            }
+        }
+    },
+    "14": {
+        "run_id": 14,
+        "np_seed": 493938,
+        "jr_seed": 797301,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run14_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run14.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run14_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run14.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run14_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run14_sarsop.log"
+            }
+        }
+    },
+    "15": {
+        "run_id": 15,
+        "np_seed": 632524,
+        "jr_seed": 6933,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run15_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run15.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run15_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run15.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run15_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run15_sarsop.log"
+            }
+        }
+    },
+    "16": {
+        "run_id": 16,
+        "np_seed": 276261,
+        "jr_seed": 614095,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run16_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run16.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run16_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run16.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run16_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run16_sarsop.log"
+            }
+        }
+    },
+    "17": {
+        "run_id": 17,
+        "np_seed": 433926,
+        "jr_seed": 308946,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run17_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run17.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run17_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run17.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run17_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run17_sarsop.log"
+            }
+        }
+    },
+    "18": {
+        "run_id": 18,
+        "np_seed": 408265,
+        "jr_seed": 248673,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run18_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run18.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run18_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run18.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run18_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run18_sarsop.log"
+            }
+        }
+    },
+    "19": {
+        "run_id": 19,
+        "np_seed": 907442,
+        "jr_seed": 949344,
+        "fig_path": "experiments/randomSparseRewardPOMDP_1/results/run19_eval_plot.jpg",
+        "log_path": "experiments/randomSparseRewardPOMDP_1/run19.log",
+        "result_path": "experiments/randomSparseRewardPOMDP_1/results/run19_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/randomSparseRewardPOMDP_1/tmp/run19.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/randomSparseRewardPOMDP_1/tmp/run19_sarsop.policy",
+                "logfile": "experiments/randomSparseRewardPOMDP_1/tmp/run19_sarsop.log"
+            }
+        }
+    }
+}

@@ -1,0 +1,457 @@
+{
+    "global": {
+        "exp_name": "river_swim_generic_transitions",
+        "tmp_dir": "experiments/river_swim_generic_transitions/tmp",
+        "result_dir": "experiments/river_swim_generic_transitions/results",
+        "n_runs": 20,
+        "n_episodes": 200,
+        "env_config": {
+            "id": "pomdp_envs:RiverSwim-v0",
+            "discount": 1.0,
+            "horizon": 40,
+            "river_length": 6,
+            "params": {
+                "transition_params": [
+                    0.6,
+                    0.35,
+                    0.05
+                ],
+                "observation_params": [
+                    0.6,
+                    0.2,
+                    0.2
+                ],
+                "reward_params": [
+                    0.005,
+                    1
+                ],
+                "init_state_probs": [
+                    1.0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "infer_config": {
+            "prior_name": "river_swim_pomdp_prior_generic_transitions",
+            "model_name": "river_swim_pomdp_model_generic_transitions",
+            "mcmc_args": {
+                "num_warmup": 1000,
+                "num_samples": 2000,
+                "num_chains": 4
+            }
+        },
+        "known_params": [
+            "reward_params",
+            "init_state_probs",
+            "n_states",
+            "n_actions",
+            "n_obs"
+        ],
+        "eval_seed": 516596,
+        "eval_result_path": "experiments/river_swim_generic_transitions/results/eval_results.csv"
+    },
+    "0": {
+        "run_id": 0,
+        "np_seed": 100097,
+        "jr_seed": 749518,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run0_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run0.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run0_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run0.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run0_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run0_sarsop.log"
+            }
+        }
+    },
+    "1": {
+        "run_id": 1,
+        "np_seed": 269655,
+        "jr_seed": 756883,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run1_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run1.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run1_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run1.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run1_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run1_sarsop.log"
+            }
+        }
+    },
+    "2": {
+        "run_id": 2,
+        "np_seed": 125415,
+        "jr_seed": 393520,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run2_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run2.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run2_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run2.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run2_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run2_sarsop.log"
+            }
+        }
+    },
+    "3": {
+        "run_id": 3,
+        "np_seed": 948720,
+        "jr_seed": 177961,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run3_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run3.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run3_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run3.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run3_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run3_sarsop.log"
+            }
+        }
+    },
+    "4": {
+        "run_id": 4,
+        "np_seed": 351750,
+        "jr_seed": 416629,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run4_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run4.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run4_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run4.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run4_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run4_sarsop.log"
+            }
+        }
+    },
+    "5": {
+        "run_id": 5,
+        "np_seed": 54184,
+        "jr_seed": 515583,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run5_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run5.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run5_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run5.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run5_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run5_sarsop.log"
+            }
+        }
+    },
+    "6": {
+        "run_id": 6,
+        "np_seed": 935731,
+        "jr_seed": 132829,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run6_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run6.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run6_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run6.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run6_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run6_sarsop.log"
+            }
+        }
+    },
+    "7": {
+        "run_id": 7,
+        "np_seed": 929563,
+        "jr_seed": 539923,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run7_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run7.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run7_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run7.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run7_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run7_sarsop.log"
+            }
+        }
+    },
+    "8": {
+        "run_id": 8,
+        "np_seed": 460205,
+        "jr_seed": 650213,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run8_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run8.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run8_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run8.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run8_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run8_sarsop.log"
+            }
+        }
+    },
+    "9": {
+        "run_id": 9,
+        "np_seed": 427695,
+        "jr_seed": 287677,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run9_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run9.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run9_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run9.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run9_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run9_sarsop.log"
+            }
+        }
+    },
+    "10": {
+        "run_id": 10,
+        "np_seed": 949539,
+        "jr_seed": 446620,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run10_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run10.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run10_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run10.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run10_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run10_sarsop.log"
+            }
+        }
+    },
+    "11": {
+        "run_id": 11,
+        "np_seed": 624986,
+        "jr_seed": 385701,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run11_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run11.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run11_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run11.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run11_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run11_sarsop.log"
+            }
+        }
+    },
+    "12": {
+        "run_id": 12,
+        "np_seed": 674981,
+        "jr_seed": 968169,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run12_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run12.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run12_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run12.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run12_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run12_sarsop.log"
+            }
+        }
+    },
+    "13": {
+        "run_id": 13,
+        "np_seed": 442234,
+        "jr_seed": 614247,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run13_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run13.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run13_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run13.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run13_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run13_sarsop.log"
+            }
+        }
+    },
+    "14": {
+        "run_id": 14,
+        "np_seed": 869137,
+        "jr_seed": 215508,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run14_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run14.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run14_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run14.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run14_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run14_sarsop.log"
+            }
+        }
+    },
+    "15": {
+        "run_id": 15,
+        "np_seed": 917871,
+        "jr_seed": 372007,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run15_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run15.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run15_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run15.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run15_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run15_sarsop.log"
+            }
+        }
+    },
+    "16": {
+        "run_id": 16,
+        "np_seed": 651763,
+        "jr_seed": 356998,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run16_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run16.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run16_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run16.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run16_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run16_sarsop.log"
+            }
+        }
+    },
+    "17": {
+        "run_id": 17,
+        "np_seed": 283053,
+        "jr_seed": 807551,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run17_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run17.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run17_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run17.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run17_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run17_sarsop.log"
+            }
+        }
+    },
+    "18": {
+        "run_id": 18,
+        "np_seed": 840812,
+        "jr_seed": 880093,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run18_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run18.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run18_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run18.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run18_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run18_sarsop.log"
+            }
+        }
+    },
+    "19": {
+        "run_id": 19,
+        "np_seed": 574832,
+        "jr_seed": 317834,
+        "fig_path": "experiments/river_swim_generic_transitions/results/run19_eval_plot.jpg",
+        "log_path": "experiments/river_swim_generic_transitions/run19.log",
+        "result_path": "experiments/river_swim_generic_transitions/results/run19_trajectories.pkl",
+        "planner_config": {
+            "pomdp_path": "experiments/river_swim_generic_transitions/tmp/run19.pomdp",
+            "discount": 0.9999,
+            "sarsop_args": {
+                "pomdpsol_path": "./sarsop/src/pomdpsol",
+                "timeout": 60,
+                "memory": 1024,
+                "precision": 0.05,
+                "policy_path": "experiments/river_swim_generic_transitions/tmp/run19_sarsop.policy",
+                "logfile": "experiments/river_swim_generic_transitions/tmp/run19_sarsop.log"
+            }
+        }
+    }
+}
