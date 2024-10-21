@@ -1,5 +1,5 @@
 # Posterior Sampling-based Online Learning for Episodic POMDPs
-This repository contains the official implementation of Posterior Sampling-based Online Learning for Episodic POMDPs.
+This repository contains the official implementation for Posterior Sampling-based Online Learning for Episodic POMDPs ([arXiv](https://arxiv.org/pdf/2310.10107)).
 
 
 ## Requirements
