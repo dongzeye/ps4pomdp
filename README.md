@@ -1,5 +1,5 @@
 # Posterior Sampling-based Online Learning for Episodic POMDPs
-This repository is the official implementation of Posterior Sampling-based Online Learning for Episodic POMDPs. We showcase the capability of PS-POMDP for solving the classical Tiger problem.
+This repository contains the official implementation of Posterior Sampling-based Online Learning for Episodic POMDPs.
 
 
 ## Requirements
