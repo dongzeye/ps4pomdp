@@ -60,7 +60,7 @@ python run_tiger.py --exp_name=tiger_theta4_discounted --run_id=0
 
 The final results are averaged over independent runs with `run_id = 0, 1, ..., 19`.
 
-To run experiments for `RiverSwim` or `RandomPOMDP` (or "Random Sparse Reward POMDP"), you may run use the generic experiment script with the pattern:
+To run experiments for `RiverSwim` or `RandomPOMDP` (or "Random Sparse Reward POMDP"), you may use the generic experiment script with the following pattern:
 ```run_experiments
 python3 run_experiment.py --exp_name=${exp_name} --run_id=${i}
 ```
@@ -76,7 +76,7 @@ The figures will be saved under `./figures/`. Some existing figures are placed u
 
 For plotting additional `Tiger` experiments (along with their labels in the plots) may be added by modifying `EXP_NAMES` and `LABELS` at the constants section of `eval_tiger.py`.
 
-For general POMDPs (like `RiverSwm` and `RandomPOMDP`), we first need to evaluate the policy values using Monte Carlo method, which can be run  with this pattern:
+For general POMDPs (like `RiverSwm` and `RandomPOMDP`), we first need to evaluate the policy values using Monte Carlo method, which can be run with this pattern:
 ```eval_policy
 python -um evals.eval_policy --exp_name=${exp_name} --n_samples=1000
 ```
